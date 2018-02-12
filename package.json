@@ -1,0 +1,16 @@
+{
+  "name": "node-ports",
+  "version": "1.0.0",
+  "description": "Simple nodejs port forwarding",
+  "author": "Peter Myers",
+  "license": "MIT",
+  "scripts": {
+    "start": "sudo node server.js"
+  },
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "http-proxy": "^1.16.2",
+    "https": "^1.0.0"
+  }
+}
