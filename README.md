@@ -2,8 +2,8 @@ Nodejs Local Proxy for SSL Termination
 ======================================
 First generate a self-signed SSL cert:
 ```sh
-  cd ssl
-  ./ssl/generate-cert.sh
+cd ssl
+./generate-cert.sh
 ```
 Fill out the required fields, for CN:  
   
