@@ -4,8 +4,8 @@ var httpProxy = require('http-proxy');
 const fs = require('fs');
 
 const options = {
-  key: fs.readFileSync('ssl/key.pem'),
-  cert: fs.readFileSync('ssl/certificate.pem')
+  key: fs.readFileSync('ssl/server.key'),
+  cert: fs.readFileSync('ssl/server.crt')
 }
 
 const portMappings = JSON.parse(fs.readFileSync('port-mappings.json'));

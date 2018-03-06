@@ -1,3 +1,6 @@
 ssl/*.pem
+ssl/*.crt
+ssl/*.key
 node_modules
 port-mappings.json
+.DS_Store
