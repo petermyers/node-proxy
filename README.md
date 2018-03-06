@@ -4,12 +4,15 @@ First generate a self-signed SSL cert:
 ```sh
 cd ssl
 ./generate-cert.sh
-```
+```  
+
 This will prompt you for two required fields, ```CN``` and ```SAN```.  
-For local development, you can use:
-```
+For local development, you can use: 
+
+```sh
 CN=*.yourdomain.com
 SAN=DNS:*.yourdomain.com
+```  
 
 This should generate the two necessary files in the ssl directory.
 
