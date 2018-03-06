@@ -5,16 +5,17 @@ First generate a self-signed SSL cert:
 cd ssl
 ./generate-cert.sh
 ```
-Fill out the required fields, for CN, see the following excerpt from IBM:
-  
+This will prompt you for two required fields, ```CN``` and ```SAN```.  
+For local development, you can use:
 ```
-Write down the Common Name (CN) for your SSL Certificate. The CN is the fully qualified name for the system that uses the certificate. If you are using Dynamic DNS, your CN should have a wild-card, for example: *.api.com. Otherwise, use the hostname or IP address set in your Gateway Cluster (for example. 192.16.183.131 or dp1.acme.com).
-```  
+CN=*.yourdomain.com
+SAN=DNS:*.yourdomain.com
 
-This should generate the two necessary .pem files in the ssl directory.
+This should generate the two necessary files in the ssl directory.
 
 Next install npm dependencies...
 ```sh
+cd ..
 npm install
 ```
 
